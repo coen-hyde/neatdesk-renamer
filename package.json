@@ -1,5 +1,5 @@
 {
-  "name": "neatdesk-export-renamer",
+  "name": "neatdesk-renamer",
   "version": "0.1.0",
   "preferGlobal": true,
   "description": "Renames NeatDesk exported pdf's to a chronological format",
@@ -7,7 +7,13 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec  --timeout 30s test/*"
   },
-  "repository": "",
+  "bin": {
+    "neatdesk-renamer": "./bin/cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coen-hyde/neatdesk-renamer.git"
+  },
   "author": {
     "name": "Coen Hyde",
     "email": "coen.hyde@gmail.com",
