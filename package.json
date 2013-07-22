@@ -1,0 +1,25 @@
+{
+  "name": "neatdesk-export-renamer",
+  "version": "0.1.0",
+  "preferGlobal": true,
+  "description": "Renames NeatDesk exported pdf's to a more logial format",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec  --timeout 30s test/*"
+  },
+  "repository": "",
+  "author": {
+    "name": "Coen Hyde",
+    "email": "coen.hyde@gmail.com",
+    "url": "http://coenhyde.com/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.11.0",
+    "touch": "0.0.2"
+  },
+  "keywords": [
+    "NeatDesk"
+  ]
+}
