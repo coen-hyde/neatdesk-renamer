@@ -1,6 +1,6 @@
 {
   "name": "neatdesk-renamer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preferGlobal": true,
   "description": "Renames NeatDesk exported pdf's to a chronological format",
   "main": "index.js",
