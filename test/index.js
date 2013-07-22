@@ -18,6 +18,10 @@ var afterFiles = [
 ];
 
 var removeFiles = function() {
+  if (!fs.existsSync(receiptsDir)) {
+    return;
+  }
+
   var files = fs.readdirSync(receiptsDir);
 
   files.forEach(function(file) {
@@ -26,10 +30,15 @@ var removeFiles = function() {
       fs.unlinkSync(path);
     }
   });
+
+  fs.rmdirSync(receiptsDir);
 }
 
 before(function() {
+  // Remove old test files incase they are still there
   removeFiles();
+
+  fs.mkdirSync(receiptsDir);
 
   beforeFiles.forEach(function(file) {
     touch.sync(file);
