@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha --reporter spec  --timeout 30s test/*"
   },
   "bin": {
-    "neatdesk-renamer": "./bin/cmd"
+    "neatdesk-renamer": "./bin/cmd.js"
   },
   "repository": {
     "type": "git",
